@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">590390456686-o83v61p9stgk1mh06bv5e65c6ufcrh2u.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">590390456686</string>
+    <string name="google_api_key" translatable="false">AIzaSyAaWHKdVLg3JJIlt-ItFLLo0J7rMOGsVs0</string>
+    <string name="google_app_id" translatable="false">1:590390456686:android:cd62846663c0cd4887117f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAaWHKdVLg3JJIlt-ItFLLo0J7rMOGsVs0</string>
+    <string name="google_storage_bucket" translatable="false">hotelproject-84217.appspot.com</string>
+    <string name="project_id" translatable="false">hotelproject-84217</string>
+</resources>
