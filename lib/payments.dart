@@ -90,6 +90,10 @@ class _PaymentsPageState extends State<PaymentsPage> {
                       color: Constants.textColor),
                 )),
             Padding(
+              padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
+              child: DatetimePickerWidget(),
+            ),
+            Padding(
                 padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
                 child: Text(
                   "Check-Out Time",
@@ -98,6 +102,10 @@ class _PaymentsPageState extends State<PaymentsPage> {
                       fontWeight: FontWeight.bold,
                       color: Constants.textColor),
                 )),
+            Padding(
+              padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
+              child: DatetimePickerWidget(),
+            ),
             Center(
               child: ElevatedButton(
                 onPressed: () {
