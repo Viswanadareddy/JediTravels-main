@@ -52,11 +52,3 @@ class MyScrollBehaviour extends MaterialScrollBehavior {
     return child;
   }
 }
-
-/*AnimatedSplashScreen(
-        splash: Icons.star_border_purple500_sharp,
-        duration: 3000,
-        splashTransition: SplashTransition.scaleTransition,
-        backgroundColor: Colors.redAccent,
-        nextScreen: Onbording(),
-      ),*/
