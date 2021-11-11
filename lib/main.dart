@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
         'home': (context) => HomeScreen(),
         'terms_and_conditions': (context) => TermsandConditionsPage(),
       },
-      home: SplashScreen(),
+      home: Onbording(),
     );
   }
 }

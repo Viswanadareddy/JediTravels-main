@@ -1,6 +1,7 @@
-/*import 'package:loginout/widgets/button_widget.dart';
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
+import 'button_widget.dart';
 
 class DatetimePickerWidget extends StatefulWidget {
   @override
@@ -8,13 +9,13 @@ class DatetimePickerWidget extends StatefulWidget {
 }
 
 class _DatetimePickerWidgetState extends State<DatetimePickerWidget> {
-  late DateTime dateTime;
+  DateTime? dateTime;
 
   String getText() {
     if (dateTime == null) {
       return 'Select DateTime';
     } else {
-      return DateFormat('MM/dd/yyyy HH:mm').format(dateTime);
+      return DateFormat('MM/dd/yyyy HH:mm').format(dateTime!);
     }
   }
 
@@ -43,7 +44,7 @@ class _DatetimePickerWidgetState extends State<DatetimePickerWidget> {
     });
   }
 
-  Future<DateTime> pickDate(BuildContext context) async {
+  Future<DateTime?> pickDate(BuildContext context) async {
     final initialDate = DateTime.now();
     final newDate = await showDatePicker(
       context: context,
@@ -57,12 +58,12 @@ class _DatetimePickerWidgetState extends State<DatetimePickerWidget> {
     return newDate;
   }
 
-  Future<TimeOfDay> pickTime(BuildContext context) async {
+  Future<TimeOfDay?> pickTime(BuildContext context) async {
     final initialTime = TimeOfDay(hour: 9, minute: 0);
     final newTime = await showTimePicker(
       context: context,
       initialTime: dateTime != null
-          ? TimeOfDay(hour: dateTime.hour, minute: dateTime.minute)
+          ? TimeOfDay(hour: dateTime!.hour, minute: dateTime!.minute)
           : initialTime,
     );
 
@@ -70,5 +71,4 @@ class _DatetimePickerWidgetState extends State<DatetimePickerWidget> {
 
     return newTime;
   }
-}
-*/
+}*/

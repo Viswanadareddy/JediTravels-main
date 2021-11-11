@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
+
 import 'constants.dart';
+import 'datetime_picker_widget.dart';
 
 class PaymentsPage extends StatefulWidget {
   const PaymentsPage({Key? key, required this.price}) : super(key: key);
   final String price;
+
   @override
   _PaymentsPageState createState() => _PaymentsPageState();
 }
@@ -13,6 +15,7 @@ class PaymentsPage extends StatefulWidget {
 class _PaymentsPageState extends State<PaymentsPage> {
   late Razorpay razerPay;
   TextEditingController textEditingController = new TextEditingController();
+
   @override
   void initState() {
     super.initState();
@@ -73,18 +76,42 @@ class _PaymentsPageState extends State<PaymentsPage> {
         backgroundColor: Constants.buttonColor,
       ),
       body: Container(
-        child: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              openCheckout();
-            },
-            style: ElevatedButton.styleFrom(primary: Constants.buttonColor),
-            child: Text('Pay Now',
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Constants.textColor)),
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+                padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                child: Text(
+                  "Check-In Time",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Constants.textColor),
+                )),
+            Padding(
+                padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                child: Text(
+                  "Check-Out Time",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Constants.textColor),
+                )),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  openCheckout();
+                },
+                style: ElevatedButton.styleFrom(primary: Constants.buttonColor),
+                child: Text('Pay Now',
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Constants.textColor)),
+              ),
+            ),
+          ],
         ),
       ),
     );

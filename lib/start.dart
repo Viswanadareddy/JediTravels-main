@@ -108,11 +108,6 @@ class _StartPageState extends State<StartPage> {
             SizedBox(
               height: 30,
             ),
-            SizedBox(
-                height: 30,
-                width: 180,
-                child: SignInButton(Buttons.Google,
-                    text: 'Sign Up with Google', onPressed: () {})),
           ],
         ),
       ),

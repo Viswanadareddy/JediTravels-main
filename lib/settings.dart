@@ -54,8 +54,8 @@ class _SettingState extends State<Setting> {
                           fontWeight: FontWeight.normal))),
               customSwitch(
                   'Enable notifications', bool, val1, onChangeFunction1),
-              customSwitch(
-                  'Light Mode / Dark Mode', bool, val2, onChangeFunction2),
+              /*customSwitch(
+                  'Light Mode / Dark Mode', bool, val2, onChangeFunction2),*/
               Divider(
                 color: Constants.textColor,
               ),

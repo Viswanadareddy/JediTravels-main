@@ -134,32 +134,28 @@ class ReccommendedModel {
 List<ReccommendedModel> recomend_hotels = [
   ReccommendedModel(
       image: 'assets/hotel_images/3.jpeg',
-      //image:
-      //'https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?s=1024x768',
+      //image:  'https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?s=1024x768',
       hotelname: 'Luxury Hotels',
       location: 'Africa',
       price: 440,
       rating: '4.5'),
   ReccommendedModel(
       image: 'assets/hotel_images/4.jpeg',
-      //image:
-      //'https://images.moneycontrol.com/static-mcnews/2019/09/Samhi_Hotels-770x433.jpg?impolicy=website&width=770&height=431',
+      //image:'https://images.moneycontrol.com/static-mcnews/2019/09/Samhi_Hotels-770x433.jpg?impolicy=website&width=770&height=431',
       hotelname: 'Evangeline Resorts',
       location: 'Russia',
       price: 400,
       rating: '4.9'),
   ReccommendedModel(
       image: 'assets/hotel_images/5.jpeg',
-      //image:
-      //'https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg',
+      //image: 'https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg',
       hotelname: 'Larry Homes',
       location: 'Europe',
       price: 420,
       rating: '4.7'),
   ReccommendedModel(
       image: 'assets/hotel_images/6.jpeg',
-      //image:
-      //'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
+      //image:  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1CjWXiBVqbpnJAGlkf_UCaqBZPGTI0veUIQ&usqp=CAU',
       hotelname: 'Jerry Restaurants',
       location: 'Austrailia',
       price: 430,
